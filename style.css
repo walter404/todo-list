@@ -1,0 +1,107 @@
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+}
+
+section{
+    margin-top: 80px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+.wrapper{
+    width: 500px;
+}
+.input-container{
+    display: flex;
+    justify-content: center;
+    height: 52px;
+}
+input, button{
+    border: none;
+    outline: none;
+}
+.input-container input{
+    padding: 18px 15px;
+    font-size: 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 320px;
+}
+.input-container button{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    padding: 16px 25px;
+    font-size: 16px;
+    color: #ff5762;
+    background: #fff;
+    border-left: 2px solid #eee;
+}
+.input-container button:hover{
+    color: #fff;
+    background:#ff5762 ;
+}
+.todo-container {
+    /* margin-top:40px; */
+    padding: 0;
+}
+.todo-container .todo {
+    margin: 0 auto;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    background: #fff;
+    border-radius: 5px ;
+}
+.todo-container .todo.completed{
+    width: 90%;
+    text-decoration: line-through;
+    color: #7e7e7e;
+    opacity: 0.7;
+}
+.todo-container button{
+    padding: 16px;
+    flex: 1;
+    margin: 0;
+}
+.todo-container .todo-check{
+    color: #05cf5b;
+    background: #fff;
+    border-left: 2px solid #eee;
+    font-size: 16px;
+}
+.todo-container .todo-check:hover{
+    color: #fff;
+    background: #05cf5b;
+    cursor: pointer;
+}
+.todo-container .todo-delete{
+    color: #ff5762;
+    background: #fff;
+    font-size: 16px;
+    border-left: 2px solid #eee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.todo-container .todo-delete:hover{
+    color: #fff;
+    background: #ff5762;
+    cursor: pointer;
+}
+
+.todo-container .todo li{
+    flex: 10;
+    padding: 16px;
+    list-style-type: none;
+    margin: 0;
+    line-height: 1.5 ;
+}
