@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
     <title>TO-DO-LIST</title>
 </head>
 <body>
-    
-    <section>
-        <h1>TO-DO-LIST</h1>
-        <div class="wrapper">
-            <div class="input-container">
-                <input type="text" name="todo" class="todo-input" id="todo-input" placeholder="TO-DO-LIST">
-                <button class="add-button" id="add-button">
-                    <i class="fa-solid fa-circle-plus"></i>
-                </button>
-            </div>
-            <ul class="todo-container" id="todo-container"></ul>
+    <main class="app">
+        <h1>My Todo List...</h1>
+        <div class="input-header">
+          <h1><span id="date"></span></h1>
+          <div class="to-do-input">
+            <input type="text" id="item" placeholder="Enter a task..."><button id="enter">Enter</button>
+          </div>
         </div>
-    </section>
+        <div class="to-do-list"></div>
+      </main>
     <script src="./main.js"></script>
 </body>
 </html>
